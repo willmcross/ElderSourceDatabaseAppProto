@@ -1,0 +1,50 @@
+﻿@model ElderSourceApp.Models.ReportModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ReportModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyModel.CompanyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyModel.CompanyName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.reportName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.reportName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateCreated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateCreated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lastDatePaid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lastDatePaid)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ReportId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
